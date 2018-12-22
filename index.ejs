@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assessment To Do List</title>
+  </head>
+  <body>
+    <h1 align='center'>Assessment To Do List</h1>
+    <h2>Submit a new task</h2>
+    <form class="" action="/newtask" method="post">
+      <input type="text" name="task" id="task" required>
+      <input type="submit" value="Submit">
+    </form>
+
+    <%=tasks%>
+
+    <form class="" action="/updatetask" method="post">
+      <h2>Submit a completed task</h2>
+      <input type="text" name="completed" id="completed" required>
+      <input type="submit" value="Submit">
+    </form>
+
+    <form class="" action="/deletetask" method="post">
+      <h2>Submit a task to delete</h2>
+      <input type="text" name="delete" id="delete" required>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+
+
+</html>
